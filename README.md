@@ -2,7 +2,6 @@
 # 🛒 Projeto de Análise de Dados – Comércio Eletrônico no Brasil (Olist)
 
 > Desenvolvido por Valquiria Oliveira
-> Projeto com duração de 5 dias – iniciante em Análise de Dados  
 > Ferramentas utilizadas: Python, Google Colab, Pandas, Matplotlib, Seaborn
 
 ---
