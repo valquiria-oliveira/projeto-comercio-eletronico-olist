@@ -15,21 +15,13 @@
 
 ---
 
-## 📁 Estrutura do Repositório
+## 📁 Estrutura do projeto
 
-projeto-comercio-eletronico-olist/
-├── dados/ # Arquivos CSV originais (Olist)
-│ ├── olist_orders_dataset.csv
-│ ├── olist_order_items_dataset.csv
-│ └── …
-├── dashboards/ # Arquivos .pbix do Power BI
-│ └── ecommerce_olist.pbix
-├── documentacao/ # Anotações e planos em Markdown
-│ ├── README.md # (Este arquivo)
-│ └── plano-projeto.md # Cronograma detalhado
-├── imagens/ # Previews e screenshots
-│ └── dashboard_preview.png
-└── .gitignore
+- **dados/**: arquivos CSV originais  
+- **dashboards/**: arquivos .pbix do Power BI  
+- **documentacao/**: planos e cronogramas  
+- **imagens/**: screenshots e previews
+
 
 ---
 
