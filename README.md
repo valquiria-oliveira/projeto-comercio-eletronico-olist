@@ -19,7 +19,7 @@
 
 - **dados/**: arquivos CSV originais  
 - **dashboards/**: arquivos .pbix do Power BI  
-- **documentacao/**: planos e cronogramas  
+- **notebook/**: notebooks de exploração e documentação passo a passo
 - **imagens/**: screenshots e previews
 
 
