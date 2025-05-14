@@ -1,111 +1,98 @@
+# 📊 Projeto Power BI – Análise de E-Commerce Brasileiro (Olist)
 
-# 🛒 Projeto de Análise de Dados – Comércio Eletrônico no Brasil (Olist)
-
-> Desenvolvido por Valquiria Oliveira
-> Ferramentas utilizadas: Python, Google Colab, Pandas, Matplotlib, Seaborn
-
----
-
-## 🧠 Objetivo do Projeto
-
-Analisar o comportamento de consumo dos brasileiros no comércio eletrônico usando dados reais da plataforma Olist, com foco em identificar padrões, insights comerciais e operacionais que ajudem a compreender melhor a jornada do cliente online.
+> **Desenvolvido por:** Valquiria Oliveira
+> **Duração:** 5 dias | **Nível:** Iniciante  
+> **Ferramentas:** Power BI, Excel (Power Query), GitHub
 
 ---
 
-## 🔗 Fonte dos Dados
+## 🎯 Objetivos
 
-- Kaggle: [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce/data)
-
----
-
-## 📦 Estrutura dos Arquivos
-
-| Arquivo                          | Descrição                                       |
-|----------------------------------|-------------------------------------------------|
-| olist_orders_dataset.csv         | Informações gerais sobre os pedidos             |
-| olist_customers_dataset.csv      | Localização e dados dos clientes                |
-| olist_order_items_dataset.csv    | Itens comprados em cada pedido                  |
-| olist_order_payments_dataset.csv | Formas de pagamento utilizadas                  |
-| olist_order_reviews_dataset.csv  | Avaliações dos consumidores                     |
-| olist_products_dataset.csv       | Dados sobre os produtos                         |
-| olist_sellers_dataset.csv        | Informações sobre os vendedores                 |
-| product_category_name_translation.csv | Tradução das categorias de produtos        |
-
----
-
-## 📝 Perguntas que pretendo responder com esse projeto:
-
-- Quais categorias de produto são mais populares?
-- Quais estados mais consomem online?
-- Qual o tempo médio de entrega?
-- Qual a avaliação média dos pedidos e quais fatores influenciam?
-- Há relação entre valor pago e satisfação do cliente?
-- Quais formas de pagamento são mais utilizadas?
-
----
-
-## 📅 Cronograma de Trabalho
-
-| Dia | Etapas                                    |
-|-----|-------------------------------------------|
-| 1   | Escolha do tema e coleta dos dados        |
-| 2   | Leitura, exploração e limpeza dos dados   |
-| 3   | Análise exploratória + visualizações      |
-| 4   | Geração de insights                       |
-| 5   | Documentação final e publicação no GitHub |
+1. **Entender padrões de compra** das famílias brasileiras no e-commerce Olist  
+2. **Analisar avaliações** de pedidos e tempo médio de entrega  
+3. **Descobrir insights logísticos** (atrasos, regiões críticas)  
+4. **Visualizar tendências** por categoria, estado e forma de pagamento
 
 ---
 
 ## 📁 Estrutura do Repositório
 
-```
 projeto-comercio-eletronico-olist/
-├── dados/                       # Arquivos CSV do Kaggle
-├── notebooks/                   # Notebook com o código (Colab)
-│   └── ecommerce_olist_colab.ipynb
-├── imagens/                     # Gráficos gerados na análise
-├── README.md                    # Documentação do projeto
-```
+├── dados/ # Arquivos CSV originais (Olist)
+│ ├── olist_orders_dataset.csv
+│ ├── olist_order_items_dataset.csv
+│ └── …
+├── dashboards/ # Arquivos .pbix do Power BI
+│ └── ecommerce_olist.pbix
+├── documentacao/ # Anotações e planos em Markdown
+│ ├── README.md # (Este arquivo)
+│ └── plano-projeto.md # Cronograma detalhado
+├── imagens/ # Previews e screenshots
+│ └── dashboard_preview.png
+└── .gitignore
 
 ---
 
-## 🧪 Etapas Técnicas
+## 🔗 Fonte dos Dados
 
-### ✅ Leitura e Limpeza dos Dados
-- Carregamento de múltiplos CSVs com Pandas
-- Checagem de tipos, nulos e consistência entre tabelas
-
-### 📊 Análise Exploratória
-- Categorização e frequência de produtos
-- Tempo médio de entrega
-- Média de avaliação por estado, categoria e vendedor
-- Correlação entre preço, frete, avaliação e tempo de entrega
-
-### 📈 Visualizações
-- Gráficos de barras, pizza e linha usando Matplotlib e Seaborn
-- Heatmaps para avaliar correlações
+- **Dataset:** Brazilian E-Commerce Public Dataset by Olist  
+- **Origem:** Kaggle – https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 
 ---
 
-## 💡 Possíveis Insights
+## 📝 Plano de Trabalho (5 Dias)
 
-- Determinar quais categorias vendem mais e têm melhores avaliações
-- Identificar gargalos logísticos (ex: estados com maior atraso na entrega)
-- Explorar preferências de pagamento por região
-- Avaliar se frete e tempo de entrega afetam as avaliações
-
----
-
-## 📌 Conclusão (em construção)
-
-A conclusão será elaborada após a análise dos dados nos próximos dias.
+| Dia | Atividade                                                                 |
+|-----|---------------------------------------------------------------------------|
+| 1   | Importar CSVs no Power BI / Conexão via Power Query                       |
+| 2   | Limpeza e transformação de dados (remover nulos, tipos, colunas extras)   |
+| 3   | Modelagem: criar dimensões (clientes, produtos) e fatos (vendas, entregas)|
+| 4   | Montar visualizações: tabelas, gráficos de barras, mapas e KPI’s           |
+| 5   | Refino estético, storytelling, exportar imagens e documentar insights      |
 
 ---
 
-## 🙋‍♀️ Sobre Mim
+## 🔧 Fluxo de Trabalho
 
-Sou iniciante em análise de dados e este é um dos meus primeiros projetos com Python. Este repositório é parte do meu portfólio de aprendizado.
+1. **Power Query**  
+   - Conectar aos CSVs  
+   - Filtrar colunas irrelevantes  
+   - Tratar erros, converter tipos e criar colunas calculadas
+
+2. **Modelagem de Dados**  
+   - Definir relacionamento entre tabelas  
+   - Criar tabelas de dimensão (ex: `DimCliente`, `DimProduto`)  
+   - Criar tabela fato (`FatoVendas`)
+
+3. **Construção do Dashboard**  
+   - Página de Visão Geral (KPIs)  
+   - Análise por Categoria e Região  
+   - Mapa de Entregas x Tempo  
+   - Gráfico de Avaliações x Valor do Pedido
+
+4. **Documentação e Apresentação**  
+   - Capturar screenshots em `/imagens/`  
+   - Escrever principais insights no `plano-projeto.md`
 
 ---
 
-📌 Se gostou do projeto, me dá uma estrela aqui no GitHub 😉
+## 💡 Insights Esperados
+
+- Quais 5 categorias mais geraram receita?  
+- Estados com maior atraso médio nas entregas  
+- Correlação entre valor do frete e avaliação do cliente  
+- Padrões de repetição de compra por cliente  
+
+---
+
+## 🚀 Próximos Passos
+
+- Publicar o relatório no Power BI Service  
+- Agendar atualização diária via gateway  
+- Evoluir com análises preditivas (ML)
+
+---
+
+> ⚠️ *Este repositório está em constante evolução. Feedbacks e sugestões são bem-vindos!*  
+
+
