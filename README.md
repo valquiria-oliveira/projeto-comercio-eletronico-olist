@@ -18,9 +18,9 @@
 ## 📁 Estrutura do projeto
 
 - **dados/**: arquivos CSV originais  
-- **dashboards/**: arquivos .pbix do Power BI  
-- **notebook/**: notebooks de exploração e documentação passo a passo
+- **dashboards/**: arquivos .pbix do Power BI
 - **imagens/**: screenshots e previews
+- **notebook/**: notebooks de exploração e documentação passo a passo
 
 
 ---
